@@ -1,8 +1,9 @@
+import { Header } from './components'
 
 function App() {
   return (
-    <div>
-      <h1>Hola mundo</h1>
+    <div className="AppPage wrapper">
+      <Header />
     </div>
   )
 }

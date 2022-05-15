@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $primary;
+}
+
+.header__logo {
+  cursor: pointer;
+  user-select: none;
+}
+
+.header__logout {
+  color: $primary;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-block-end: 0.5rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  &:hover {
+    border-bottom: 1px solid $primary;
+    padding-block-end: 0.4375rem;
+  }
+}
