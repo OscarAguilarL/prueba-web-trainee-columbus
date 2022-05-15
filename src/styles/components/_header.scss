@@ -3,11 +3,15 @@
   align-items: center;
   justify-content: space-between;
   color: $primary;
+  padding-block-end: 2rem;
+
+  border-bottom: 1px solid lighten($color: $secondary, $amount: 30);
 }
 
 .header__logo {
   cursor: pointer;
   user-select: none;
+  padding-block-end: 0.5rem;
 }
 
 .header__logout {
