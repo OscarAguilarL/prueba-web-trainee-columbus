@@ -1,19 +1,21 @@
 .nav {
   padding-block: 2rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
 .nav__item {
   box-sizing: border-box;
+  padding-block: 0.75rem;
+  padding-inline: 1rem;
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: $secondary;
-  padding-block-end: 0.75rem;
   transition: 0.3s color ease-out;
 
   &:hover {
