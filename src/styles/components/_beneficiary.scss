@@ -128,3 +128,13 @@
     max-width: 100%;
   }
 }
+
+.beneficiary__buttons {
+  margin-block-start: 3rem;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    inline-size: 40%;
+  }
+}

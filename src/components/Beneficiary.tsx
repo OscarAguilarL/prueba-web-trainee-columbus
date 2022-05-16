@@ -246,6 +246,11 @@ export const Beneficiary = () => {
             </Tippy>
           </span>
         </div>
+
+        <div className="beneficiary__buttons">
+          <Button>Anterior</Button>
+          <Button isPrimary>Siguiente</Button>
+        </div>
       </div>
     </div>
   )
