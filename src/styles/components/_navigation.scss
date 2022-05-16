@@ -1,10 +1,9 @@
 .nav {
   padding-block: 2rem;
   margin-block-end: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .nav__item {
