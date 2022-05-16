@@ -98,3 +98,33 @@
 .beneficiary__form--submit {
   grid-column-start: 3;
 }
+
+.beneficiary__checkbox {
+  margin-block-start: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  gap: 1rem;
+}
+
+.beneficiary__check--input {
+  display: block;
+  padding: 1rem;
+}
+
+.beneficiary__check--label {
+  word-wrap: break-word;
+  max-width: 70%;
+}
+
+.beneficiary__check--icon {
+  display: block;
+  width: 1rem;
+  cursor: pointer;
+
+  img {
+    max-width: 100%;
+  }
+}

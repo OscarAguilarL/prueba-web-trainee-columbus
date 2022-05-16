@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tippyjs/react": "^4.2.6",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "sass": "^1.51.0"

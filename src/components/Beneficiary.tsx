@@ -1,6 +1,12 @@
 import { FormEvent, useState } from 'react'
+import Tippy from '@tippyjs/react'
+
 import { useForm } from '../hooks'
 import { Button } from './Button'
+
+import 'tippy.js/dist/tippy.css' // optional
+
+import infoIcon from '../assets/info-icon.svg'
 
 interface BeneficiaryEntity {
   fullname: string
@@ -214,6 +220,32 @@ export const Beneficiary = () => {
             </div>
           </div>
         ))}
+
+        <div className="beneficiary__checkbox">
+          <input
+            className="beneficiary__check--input"
+            type="checkbox"
+            id="check"
+          />
+          <label className="beneficiary__check--label" htmlFor="check">
+            Deseo que un asesor me contacte para añadir un beneficiario en caso
+            de fallecimiento de otro beneficiario.
+          </label>
+          <span className="beneficiary__check--icon">
+            <Tippy
+              content={
+                <p>
+                  Activa esta casilla si deseas que un asesor te contacte
+                  posteriormente para definir beneficiarios adicionales en caso
+                  del fallecimiento de alguno de los beneficiarios previamente
+                  registrados.
+                </p>
+              }
+            >
+              <img src={infoIcon} alt="" />
+            </Tippy>
+          </span>
+        </div>
       </div>
     </div>
   )
