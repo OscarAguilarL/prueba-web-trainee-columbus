@@ -1,4 +1,4 @@
-import { Beneficiary, Header, Navigation } from './components'
+import { Beneficiary, Footer, Header, Navigation } from './components'
 
 function App() {
   return (
@@ -7,6 +7,8 @@ function App() {
       <Navigation />
 
       <Beneficiary />
+
+      <Footer />
     </div>
   )
 }
