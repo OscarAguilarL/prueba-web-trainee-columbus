@@ -23,7 +23,8 @@
   text-transform: capitalize;
 }
 
-.beneficiary__form {
+.beneficiary__form,
+.beneficiary__list {
   box-shadow: 0 10px 70px -10px rgb(0 0 0 / 0.25);
   padding-inline: 1.5rem;
   padding-block: 1.5rem;
@@ -35,6 +36,16 @@
 
   .beneficiary__form--title {
     font-size: 1.25rem;
+  }
+}
+
+.beneficiary__list {
+  margin-block-start: 3rem;
+  box-shadow: 0 10px 50px -10px rgb(0 0 0 / 0.25);
+
+  input:read-only {
+    // background-color: lightgray;
+    cursor: default;
   }
 }
 
