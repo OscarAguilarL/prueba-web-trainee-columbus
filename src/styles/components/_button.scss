@@ -1,0 +1,31 @@
+.app__button {
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  padding: 0.75rem;
+
+  border: 2px solid $primary;
+  border-radius: 0.25rem;
+
+  font-weight: bold;
+  color: $primary;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.app__button.is-primary {
+  background: $primary;
+  color: white;
+
+  &:hover {
+    background-color: darken($color: $primary, $amount: 15);
+  }
+}
+
+.app__button.is-secondary {
+  background: white;
+
+  &:hover {
+    background-color: darken($color: white, $amount: 15);
+  }
+}

@@ -1,3 +1,5 @@
+import { Button } from "./Button"
+
 export const Beneficiary = () => {
   return (
     <div className="beneficiary">
@@ -35,13 +37,13 @@ export const Beneficiary = () => {
             <input type="tel" id="contactphone" placeholder="0000000000" />
           </div>
           <div className="beneficiary__form--field">
-            <button className="beneficiary__form--button">Remover</button>
+            <Button className="beneficiary__form--button">Remover</Button>
           </div>
         </div>
         <div className="beneficiary__form-third">
-          <button className="beneficiary__form--submit">
+          <Button isPrimary className="beneficiary__form--submit">
             Añadir beneficiario
-          </button>
+          </Button>
         </div>
       </form>
     </div>
