@@ -56,6 +56,10 @@
       outline: 1.5px solid $primary;
     }
   }
+
+  input:invalid {
+    border: 1.5px solid red;
+  }
 }
 
 .beneficiary__form-first,
