@@ -42,6 +42,14 @@ export const Beneficiary = () => {
     onResetForm()
   }
 
+  const handleRemoveFn = (curp: string) => {
+    const beneficiariesFiltered = beneficiaries.filter(
+      (beneficiaryCurp) => beneficiaryCurp.CURP !== curp
+    )
+
+    setBeneficiaries(beneficiariesFiltered)
+  }
+
   return (
     <div className="beneficiary">
       <h2 className="beneficiary__title">
@@ -196,7 +204,12 @@ export const Beneficiary = () => {
                 />
               </div>
               <div className="beneficiary__form--field">
-                <Button className="beneficiary__form--button">Remover</Button>
+                <Button
+                  onClick={() => handleRemoveFn(el.CURP)}
+                  className="beneficiary__form--button"
+                >
+                  Remover
+                </Button>
               </div>
             </div>
           </div>
